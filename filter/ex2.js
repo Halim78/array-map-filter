@@ -15,7 +15,15 @@ Exemple d'entrée:
 
  */
 
-function getMultiplesOf(numbers, n) {
+const getMultiplesOf = (numbers, n) => {
+  return numbers.filter(element => {
+   if (element % n == 0){
+     return element ;
+   }
+   else {
+     return ;
+   }
+ })
 }
 
 // Ne pas modifier l'export

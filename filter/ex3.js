@@ -23,7 +23,15 @@ Sortie attendue:
 
  */
 
-function keepStarks(names) {
+const keepStarks = (names) => {
+  return names.filter(element => {
+    if (element.includes("Stark")){
+      return element;
+    }
+    else{
+      return ;
+    }
+  })
 }
 
 // Ne pas modifier l'export

@@ -39,6 +39,14 @@ Exemple d'entrée:
  */
 
 function searchWordFilter(items, search) {
+  return items.filter(element => {
+    if (element.includes(search) ){
+      return element;
+    }
+    else {
+      return ;
+    }
+  })
 }
 
 // Ne pas modifier l'export

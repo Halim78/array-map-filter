@@ -40,7 +40,7 @@ Exemple d'entrée:
 
 function searchWordFilter(items, search) {
   return items.filter(element => {
-    if (element.includes(search) ){
+    if (element.toLowerCase().includes(search) ){
       return element;
     }
     else {
